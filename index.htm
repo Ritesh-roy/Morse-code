@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MorsePrecision | Portfolio Edition</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="main-wrapper">
+    <header>
+        <div class="logo">MorsePrecision</div>
+        <div class="credit-badge">RITESH ROY PORTFOLIO</div>
+    </header>
+
+    <div class="switcher-wrapper">
+        <div class="mode-slider" id="modeSwitcher" data-active="t2m">
+            <div class="slider-thumb"></div>
+            <div class="mode-label active" id="lbl-t2m">Text to Morse</div>
+            <div class="mode-label" id="lbl-m2t">Morse to Text</div>
+        </div>
+    </div>
+
+    <div class="panel-container">
+        <div id="panel-t2m" class="converter-panel active">
+            <div class="block">
+                <div class="header-row">
+                    <div class="label">Input Plain Text</div>
+                </div>
+                <textarea id="t2m-input" placeholder="Enter text..."></textarea>
+            </div>
+            <div class="block">
+                <div class="header-row">
+                    <div class="label">Morse Result</div>
+                    <button class="copy-btn" onclick="copyResult('t2m-output')">Copy</button>
+                </div>
+                <div id="t2m-output" class="output-box"></div>
+            </div>
+        </div>
+
+        <div id="panel-m2t" class="converter-panel">
+            <div class="block">
+                <div class="header-row">
+                    <div class="label">Input Morse Code</div>
+                </div>
+                <textarea id="m2t-input" placeholder=".... . .-.. .-.. ---"></textarea>
+            </div>
+            <div class="block">
+                <div class="header-row">
+                    <div class="label">Plain Text Result</div>
+                    <button class="copy-btn" onclick="copyResult('m2t-output')">Copy</button>
+                </div>
+                <div id="m2t-output" class="output-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="portfolio-credit">
+            CREATED BY <b>Ritesh Roy</b> -- 2026
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
